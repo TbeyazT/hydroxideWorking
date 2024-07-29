@@ -9,7 +9,7 @@ local requiredMethods = {
     ["getScriptClosure"] = true,
     ["isXClosure"] = true
 }
-
+--[[
 local function scan(query)
     local scripts = {}
     query = query or ""
@@ -32,7 +32,7 @@ local function scan(query)
 
     return scripts
 end
-
+]]
 ScriptScanner.RequiredMethods = requiredMethods
-ScriptScanner.Scan = scan
+ScriptScanner.Scan = nil
 return ScriptScanner
